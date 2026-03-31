@@ -1,0 +1,80 @@
+<div class="relative min-h-screen flex items-center mesh-gradient">
+  <!-- Floating Background Elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
+    <div class="absolute top-40 right-10 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style="animation-delay: 2s;"></div>
+    <div class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style="animation-delay: 4s;"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+      
+      <!-- Left Content -->
+      <div class="text-center lg:text-left">
+        <h1 class="text-6xl sm:text-7xl font-black leading-tight tracking-tighter text-gray-900 mb-6">
+          The Ultimate <br />
+          <span class="text-gradient">Event Hub</span>
+        </h1>
+        <p class="text-xl text-gray-600 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed font-medium">
+          Join the vibe. Host epic parties, discover secret gigs, and connect with your crew. Secure tickets in seconds.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+          <a routerLink="/events" class="group relative px-8 py-4 bg-primary-600 text-white rounded-2xl font-black text-lg shadow-2xl shadow-primary-500/40 hover:bg-primary-700 transition-all transform hover:scale-105 overflow-hidden">
+            <span class="relative z-10 flex items-center justify-center">
+              Explore Now
+            </span>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+          </a>
+          
+          <a routerLink="/register" class="px-8 py-4 bg-white/50 backdrop-blur-md border-2 border-white text-gray-900 rounded-2xl font-black text-lg hover:bg-white/80 transition-all transform hover:scale-105 shadow-xl">
+            Join the Club
+          </a>
+        </div>
+        
+        <div class="flex items-center justify-center lg:justify-start gap-6">
+          <span class="text-xs font-bold tracking-widest uppercase text-gray-500">Trusted by over 10k users</span>
+        </div>
+      </div>
+
+      <!-- Right Content - Image -->
+      <div class="hidden lg:block relative">
+        <div class="absolute -inset-4 bg-gradient-to-r from-primary-500 to-purple-600 rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
+        
+        <!-- Main Image Container -->
+        <div class="relative">
+          <img
+            class="relative rounded-3xl shadow-2xl border-4 border-white/50 object-cover w-full h-[500px]"
+            src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1000"
+            alt="Epic event"
+          />
+          
+          <!-- Floating Badge -->
+          <div class="absolute -bottom-6 -left-6 glass p-6 rounded-3xl shadow-2xl max-w-[200px] animate-float">
+            <p class="text-xs font-black text-primary-600 uppercase mb-1">New Drop</p>
+            <p class="text-sm font-bold text-gray-800">Summer Beach Fest 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Grid -->
+    <div class="mt-32 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="glass p-8 rounded-3xl hover-lift text-center">
+        <div class="text-5xl mb-4">💳</div>
+        <h3 class="text-xl font-black text-gray-900 mb-2">Secure Pay</h3>
+        <p class="text-gray-600 text-sm font-medium">Fast Dinar payments with 0 stress.</p>
+      </div>
+      <div class="glass p-8 rounded-3xl hover-lift text-center">
+        <div class="text-5xl mb-4">💬</div>
+        <h3 class="text-xl font-black text-gray-900 mb-2">Live Chat</h3>
+        <p class="text-gray-600 text-sm font-medium">Connect with attendees in real-time.</p>
+      </div>
+      <div class="glass p-8 rounded-3xl hover-lift text-center">
+        <div class="text-5xl mb-4">🎫</div>
+        <h3 class="text-xl font-black text-gray-900 mb-2">E-Tickets</h3>
+        <p class="text-gray-600 text-sm font-medium">Instant QR codes for entry.</p>
+      </div>
+    </div>
+  </div>
+</div>
